@@ -51,6 +51,10 @@ def calculate():
     if operation == "celsius_to_fahrenheit":
         result = float(number_1 * 9 / 5 + 32)
 
+    if operation == 'subtraction':
+        number_2 = float(request.form["number_2"])
+        result = number_1 - number_2
+
     return render_template("index.html", result=result)
 
 

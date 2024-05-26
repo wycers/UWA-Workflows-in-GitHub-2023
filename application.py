@@ -58,6 +58,10 @@ def calculate():
     if operation == "sqrt":
         result = f"± {math.sqrt(number_1)}"
 
+    if operation == "multiplication":
+        number_2 = float(request.form["number_2"])
+        result = number_1 * number_2
+
     return render_template("index.html", result=result)
 
 

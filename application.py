@@ -48,6 +48,9 @@ def calculate():
     if operation == "factorial":
         result = math.factorial(int(number_1))
 
+    if operation == "celsius_to_fahrenheit":
+        result = float(number_1 * 9 / 5 + 32)
+
     return render_template("index.html", result=result)
 
 
